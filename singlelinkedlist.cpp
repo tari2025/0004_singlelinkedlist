@@ -22,7 +22,7 @@ public:
     void addNode()
     {
         int nim;
-        cout << "\nMasukkan Nomor Mhasiswa: ";
+        cout << "\nMasukkan Nomor Mahasiswa: ";
         cin >> nim;
 
         Node *nodeBaru = new Node;
@@ -155,7 +155,7 @@ int main()
                      << endl;
             << "Data dengan nomor mahasiswa " << nim << " berhasil dihapus " << endl;
         }
-            Break;
+        break;
         case '3':
         {
             mhs.traverse();
