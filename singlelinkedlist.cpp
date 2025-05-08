@@ -177,5 +177,9 @@ int main()
                 cout << endl
                      << "Data tidak ditemukan << endl;
                     else "
-        }
-        }
+                {
+                    cout << endl
+                         << "Data ditemukan" << endl;
+                    cout << "\nNo Mahasiswa: " < < < current->noMhs << endl;
+                    cout << "\n";
+                }
