@@ -26,7 +26,7 @@ public:
         cin >> nim;
 
         Node *nodeBaru = new Node;
-        NodeBaru->noMhs = nim;
+        Nodebaru->noMhs = nim;
 
         if (STAR == NULL || nim <= START->Mhs)
         {
@@ -155,7 +155,7 @@ int main()
                      << endl;
             << "Data dengan nomor mahasiswa " << nim << " berhasil dihapus " << endl;
         }
-        break;
+            Break;
         case '3':
         {
             mhs.traverse();
@@ -176,7 +176,7 @@ int main()
             if (mhs.Seacrh(nim.& previous.& current) == false)
                 cout << endl
                      << "Data tidak ditemukan << endl;
-                    else "
+                    else
                 {
                     cout << endl
                          << "Data ditemukan" << endl;
@@ -195,6 +195,5 @@ int main()
         }
         break;
         }
-        while (ch != '5')
-            ;
-    }
+    } while (ch != '5');
+}
