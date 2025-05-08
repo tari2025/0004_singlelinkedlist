@@ -28,12 +28,38 @@ public:
         Node *nodeBaru = new Node;
         NodeBaru->noMhs = nim;
 
-        if (STAR == NULL || nim <= START->Mhs))
+        if (STAR == NULL || nim <= START->Mhs)
+        {
+                if ((START != NULL &&(nim == START->noMhs))
+                 {
+                cout << "\nDuplikasi noMhs tidak diijinkan\n";
+                return;
+                    }
+                    node Baru->next = START;
+                    START = nodeBaru;
+                    return;
+        }
+
+        Node *previous = START;
+        Node *current = START;
+
+        while ((current != NULL) && (nim >= current->noMhs))
+        {
+            if (nim == current->noMhs)
             {
-                if ((START != NULL &&(nim == START->noMhs)) {
-                        cout << "\nDuplikasi noMhs tidak diijinkan\n";
-                        return;
-                    })
+                cout << "\nDuplikasi noMhs tidak diijinkan\n";
+                return;
             }
+            previous = current;
+            current = current->next;
+        }
+
+        nodeBaru->next = current;
+        previous->next = nodeBaru;
+    }
+
+    bool listEmpty()
+    {
+        return (START == NULL);
     }
 }
